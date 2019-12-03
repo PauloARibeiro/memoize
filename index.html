@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        max-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container input {
+        padding: 10px 20px;
+        border-radius: 1.3px;
+        border: none;
+        background: #f1f1f1;
+      }
+
+      .container span {
+        margin: 10px 0 0 20px;
+      }
+    </style>
+
+    <div class="container">
+      <input
+        type="text"
+        onkeyup="memoize.onChange(event)"
+        placeholder="Search here..."
+      />
+      <span data="suggestion"></span>
+    </div>
+
+    <script src="./memoize1.js"></script>
+    <script src="./memoize2.js"></script>
+  </body>
+</html>
